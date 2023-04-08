@@ -29,26 +29,18 @@ export default function About() {
           openNav ? "h-screen overflow-y-hidden" : "h-screen"
         }`}
       >
-        <div className="flex flex-col  items-center overflow-x-hidden xl:px-[20%] lg:px-[10%] md:px-[5%] sm:px-[2%]  w-screen text-primary bg-secondary  h-screen  dark:text-secondary dark:bg-primary text-sm  dark:font-light">
+        <div className="flex flex-col   sm:pb-[22%] items-center overflow-x-hidden xl:px-[20%] lg:px-[10%] md:px-[5%] sm:px-[2%]  w-screen text-primary bg-secondary  h-screen  dark:text-secondary dark:bg-primary text-sm  dark:font-light">
           <HomeNav></HomeNav>
 
           <div className="flex flex-col lg:flex-row items-center mt-0">
-            {/* image container */}
-            <div className={`${openNav && "z-[-1]"} lg:w-1/2 sm:h-[1000x] `}>
-              <img
-                className="md:w-full h-full object-cover grayscale"
-                src="https://images.pexels.com/photos/2372978/pexels-photo-2372978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-              />
-            </div>
             {/* infos */}
-            <div className="flex flex-col lg:w-1/2 lg:pl-10">
+            <div className="flex flex-col lg:w-1/2 lg:pr-10">
               <h1 className="font-head font-semibold dark:font-medium tracking-wide  sm:text-4xl  md:text-5xl  lg:text-7xl text-7xl py-4 tracking-wide ">
                 About Us
               </h1>
 
               <div className="flex items-center py-2 bg-accent/[0.5] ">
-                <button className=" italic md:pl-4 text-center text-2xl tracking-[.35em]">
+                <button className=" italic md:pr-4 text-center text-2xl tracking-[.35em]">
                   Lorem ipsum dolor
                 </button>
               </div>
@@ -74,6 +66,14 @@ export default function About() {
               </p>
 
               <div className=" flex md:justify-end  sm:justify-center w-full py-10"></div>
+            </div>
+            {/* image container */}
+            <div className={`${openNav && "z-[-1]"} lg:w-1/2 sm:h-[1000x] `}>
+              <img
+                className="md:w-full h-full object-cover grayscale"
+                src="https://images.pexels.com/photos/2372978/pexels-photo-2372978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+              />
             </div>
           </div>
         </div>

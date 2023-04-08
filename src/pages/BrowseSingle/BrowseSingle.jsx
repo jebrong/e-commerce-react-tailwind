@@ -47,7 +47,7 @@ export default function BrowseSingle() {
       className="absolute left-01"
     >
       <div className={darkMode ? "dark" : ""}>
-        <div className="flex flex-col  items-center overflow-x-hidden xl:px-[20%] lg:px-[10%] md:px-[5%] sm:px-[2%]  w-screen text-primary bg-secondary  h-screen  dark:text-secondary dark:bg-primary text-sm  dark:font-light">
+        <div className="flex flex-col  items-center overflow-x-hidden  sm:pb-[22%] xl:px-[20%] lg:px-[10%] md:px-[5%] sm:px-[2%]  w-screen text-primary bg-secondary  h-screen  dark:text-secondary dark:bg-primary text-sm  dark:font-light">
           <BrowseSingleNav></BrowseSingleNav>
           <m.div
             variants={buttonHoverTap}
@@ -183,7 +183,7 @@ export default function BrowseSingle() {
               <m.button
                 variants={buttonHoverTap}
                 whileTap="tap"
-                className="  border-2 border-primary  hover:bg-primary hover:text-secondary dark:hover:bg-secondary dark:hover:text-primary  dark:border-secondary md:p-4 sm:p-2 sm:mb-10 md:font-bold font-inter text-sm sm:font-medium tracking-[.85em] "
+                className="  border-2 border-primary  hover:bg-primary hover:text-secondary dark:hover:bg-secondary dark:hover:text-primary  dark:border-secondary md:p-4 sm:p-2 sm:mb-10 md:font-bold font-inter text-sm sm:font-medium tracking-[.85em] sm:tracking-[.2em] sm:mx-16 "
                 onClick={(e) => {
                   e.preventDefault();
                   dispatch(addToCart(singleProduct.id));

@@ -12,7 +12,7 @@ export default function DarkButton() {
     <div
       className={`${
         home ? "sticky" : "fixed w-full "
-      }     flex justify-end   bottom-6 lg:bottom-10`}
+      }     flex justify-end   bottom-6 lg:bottom-10  sm:bottom-[90px]`}
     >
       <m.button
         variants={buttonHoverTap}

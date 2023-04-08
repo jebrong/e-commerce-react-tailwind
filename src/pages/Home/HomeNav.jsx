@@ -125,7 +125,7 @@ export default function HomeNav() {
           }}
           className="dark:border-secondary text-center	 tracking-wide font-head  font-black dark:font-extrabold md:text-xl  sm:text-lg cursor-pointer "
         >
-          Carding ang bato
+          FURNITUR
         </h1>
         <div className=" text-2xl">
           {openNav ? (

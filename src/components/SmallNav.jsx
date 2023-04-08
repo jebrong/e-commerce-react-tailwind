@@ -34,7 +34,7 @@ export default function SmallNav() {
         }}
         className={` ${
           !openNav ? "hidden" : ""
-        } absolute top-0 underline-offset-4  h-screen w-screen  flex flex-col justify-between w-full  dark:border-secondary  md:hidden px-2 pr-4 absolute bg-secondary dark:bg- z-30 overflow-hidden`}
+        } absolute top-0 underline-offset-4  h-screen w-screen  flex flex-col justify-between w-full  dark:border-secondary  md:hidden px-2 pr-4 absolute bg-secondary dark:bg-primary z-30 overflow-hidden`}
       >
         <div className="flex flex-col ">
           <div className="py-4 flex justify-between  w-full  dark:border-secondary  md:hidden px-2">

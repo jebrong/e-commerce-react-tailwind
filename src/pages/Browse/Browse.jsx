@@ -60,7 +60,7 @@ export default function Browse() {
       className="absolute left-0"
     >
       <div className={darkMode ? "dark" : ""}>
-        <div className=" flex flex-col  items-center overflow-x-hidden xl:px-[20%] lg:px-[10%] md:px-[5%] sm:px-[2%]  w-screen text-primary bg-secondary  h-screen  dark:text-secondary dark:bg-primary text-sm  dark:font-light ">
+        <div className=" flex flex-col  items-center overflow-x-hidden xl:px-[20%] lg:px-[10%] md:px-[5%] sm:px-[2%]   sm:pb-[22%] w-screen text-primary bg-secondary  h-screen  dark:text-secondary dark:bg-primary text-sm  dark:font-light ">
           <BrowseSingleNav></BrowseSingleNav>
           {/* mobile search */}
 
@@ -280,7 +280,6 @@ export default function Browse() {
             </div>
             <div className="flex flex-col items-center">
               {/* items section */}
-
               <div className="w-full grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-4 2xl:grid-cols-6 cursor-pointer  ">
                 {showProducts.map((item) => {
                   return (
@@ -289,7 +288,7 @@ export default function Browse() {
                         dispatch(findSingleProduct(item.id));
                         navigate("/browse/" + item.id);
                       }}
-                      className="group  hover:bg-primary/[.1]  dark:bg-secondary/[0.1] dark:border-secondary sm:w-full  sm:m-4 md:m-0 flex flex-col items-center justify-center  h-[270px]  bg-accent hover:bg- mr-5 mb-5 p-5 border border-primary grow"
+                      className="group  hover:bg-primary/[.1]  dark:bg-secondary/[0.1] dark:border-secondary sm:w-full  sm:my-4 md:m-0 flex flex-col items-center justify-center  h-[270px]  bg-accent hover:bg- mr-5 mb-5 p-5 border border-primary grow"
                       key={item.id}
                     >
                       <img
